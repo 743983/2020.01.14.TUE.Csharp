@@ -1,0 +1,41 @@
+using System;
+
+namespace C09999
+{
+    class View
+    {
+        static void Main(string[] args)
+        {
+            // let's start by creating an OBJECT of the MODEL class
+            // remember the MODEL is in charge of ALL the Data
+            // the controller is in charge of ALL the Business Processes
+            Model model1 = new Model();
+            model1.GetUserData();
+        }
+    }
+
+    class Model
+    {
+        // this is the DATA of WHAT input numbers
+        // and what operation to operation
+
+        public void GetUserData()
+        {
+            int input1 = Console.Read();
+            int input2 = Console.Read();
+            // post condition is input1 and input2 should 
+            // now contain the values the user entered
+        }
+
+    }
+
+    class Calculator
+    {
+        // this is my Controller, because it contains the BUSINESS LOGIC
+
+        public int Add()
+        {
+
+        }
+    }
+}
