@@ -11,6 +11,9 @@ namespace C09999
             // the controller is in charge of ALL the Business Processes
             Model model1 = new Model();
             model1.GetUserData();
+
+            Calculator calc1 = new Calculator();
+            calc1.Add();
         }
     }
 
@@ -21,8 +24,13 @@ namespace C09999
 
         public void GetUserData()
         {
-            int input1 = Console.Read();
-            int input2 = Console.Read();
+            //int input1 = Convert.ToInt16(Console.Read());
+            //int input2 = Convert.ToInt16(Console.Read());
+            int input1 = 2;
+            int input2 = 2;
+            Console.WriteLine("input1 is {0} ", input1);
+            Console.WriteLine("input2 is {0}", input2);
+            Console.Read();
             // post condition is input1 and input2 should 
             // now contain the values the user entered
         }
@@ -35,7 +43,7 @@ namespace C09999
 
         public int Add()
         {
-
+            return 0;
         }
     }
 }
