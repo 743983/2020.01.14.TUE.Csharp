@@ -13,7 +13,7 @@ namespace C09999
             model1.GetUserData();
 
             Calculator calc1 = new Calculator();
-            Console.WriteLine("input is {0}  and {1}  Output is {2} ", model1.userInput1, model1.userInput2, calc1.Add(model1.userInput1, model1.userInput2));
+            Console.WriteLine("input is {0}  and {1}  Output is {2} ", model1.userInput1, model1.userInput2,  calc1.Add(model1.userInput1, model1.userInput2));
         }
     }
 
@@ -26,10 +26,10 @@ namespace C09999
 
         public void GetUserData()
         {
-            //int input1 = Convert.ToInt16(Console.Read());
-            //int input2 = Convert.ToInt16(Console.Read());
-            userInput1 = 2;
-            userInput2 = 2;
+            userInput1 = Convert.ToInt16(Console.ReadLine());
+            userInput2 = Convert.ToInt16(Console.ReadLine());
+            //userInput1 = 2;
+            //userInput2 = 2;
             Console.WriteLine("input1 is {0} ", userInput1);
             Console.WriteLine("input2 is {0}", userInput1);
             Console.Read();
