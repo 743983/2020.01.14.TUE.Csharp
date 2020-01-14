@@ -13,7 +13,7 @@ namespace C09999
             model1.GetUserData();
 
             Calculator calc1 = new Calculator();
-            calc1.Add();
+            Console.WriteLine("input is {0}  and {1}  Output is {2} ", model1.userInput1, model1.userInput2, calc1.Add(model1.userInput1, model1.userInput2));
         }
     }
 
@@ -21,15 +21,17 @@ namespace C09999
     {
         // this is the DATA of WHAT input numbers
         // and what operation to operation
+        public int userInput1;
+        public int userInput2; 
 
         public void GetUserData()
         {
             //int input1 = Convert.ToInt16(Console.Read());
             //int input2 = Convert.ToInt16(Console.Read());
-            int input1 = 2;
-            int input2 = 2;
-            Console.WriteLine("input1 is {0} ", input1);
-            Console.WriteLine("input2 is {0}", input2);
+            userInput1 = 2;
+            userInput2 = 2;
+            Console.WriteLine("input1 is {0} ", userInput1);
+            Console.WriteLine("input2 is {0}", userInput1);
             Console.Read();
             // post condition is input1 and input2 should 
             // now contain the values the user entered
@@ -41,9 +43,9 @@ namespace C09999
     {
         // this is my Controller, because it contains the BUSINESS LOGIC
 
-        public int Add()
+        public int Add(int FirstNumberToOperateOn, int SecondNumberToOperateOn  )
         {
-            return 0;
+            return FirstNumberToOperateOn + SecondNumberToOperateOn;
         }
     }
 }
